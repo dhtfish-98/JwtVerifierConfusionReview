@@ -1,0 +1,9 @@
+include .gitignore
+include pyproject.toml
+recursive-include .github/workflows *.yml
+recursive-include src *.py
+recursive-include tests *.py
+recursive-include scripts *.py
+recursive-include 项目文档 *.md LICENSE
+global-exclude __pycache__ *.pyc *.pyo
+

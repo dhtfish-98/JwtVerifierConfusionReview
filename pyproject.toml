@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jwt-verifier-confusion-review"
+version = "0.1.0"
+description = "A bounded, self-owned JWT access-token verifier confusion experiment"
+readme = "项目文档/README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["项目文档/LICENSE"]
+authors = [{name = "dhtfish98"}]
+dependencies = [
+  "PyJWT==2.15.1",
+  "cryptography==50.0.2",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
